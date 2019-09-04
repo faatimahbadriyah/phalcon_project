@@ -10,6 +10,7 @@
 	            <th>Id</th>
 	            <th>Name</th>
 	            <th>Email</th>
+	            <th>Kelas</th>
 	            <th colspan=2>Action</th>
 	        </tr>
 	    </thead>
@@ -19,6 +20,7 @@
 	            <td>{{ datas.id_user }}</td>
 	            <td>{{ datas.nama_user }}</td>
 	            <td>{{ datas.email_user }}</td>
+	            <td>{{ datas.kelas.nama_kelas }}</td>
 				<td><a href="{{ url('user/edit/' ~ datas.id_user) }}">Edit</a> </td>
 				<td><a href="{{ url('user/hapus/' ~ datas.id_user) }}">Hapus</a> </td>
 	        </tr>
